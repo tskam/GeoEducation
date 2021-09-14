@@ -1,0 +1,159 @@
+---
+title: "Democratising Geospatial Data Science and Analytics with R Shiny App"
+subtitle: ""  
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems (Practice)"
+institute: "School of Computing and Information Systems</br>Singapore Management University"
+date: "2020-01-12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, "css/text.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "js/macros.js"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+---
+## Content
+
+
+
+
+
+---
+## Why You Are Here
+
+.vlarge[
+Because you are:
+
+- tired of typing R codes repeatedly,
+
+- you missed friendly GUI,
+
+- interested to create awesome web applications using R] 
+
+---
+class: middle
+
+# What you may not know:
+
+--
+
+### html5 ![:scale 15%](img/image3.jpg)
+
+--
+
+### JavaScript ![:scale 15%](img/image4.jpg)
+
+--
+
+### CSS (Cascading Style Sheets)![:scale 8%](img/image5.jpg)
+
+---
+## Getting to Know Shiny
+### Shiny: Overview
+
+.pull-left[
+.large[
+- Shiny is an open package from RStudio.
+
+- It provides a **web application framework** to create interactive web applications (visualization) called "Shiny apps".
+
+- It can be found at https://shiny.rstudio.com/
+]]
+
+.pull-right[
+![](img/image5.jpg)]
+
+---
+## Getting to Know Shiny
+### What is so special about Shiny?
+
+.pull-left[
+.large[
+
+It allows R users:
+-  to build and share highly interactive web-enabled applications without having to invest significant among of time and efforts to master core web design technologies such as html5, Javascript and CSS.
+
+- to integrate the analytical and visualisation packages of R without having to change from one programming language to another.]]
+
+.pull-right[
+![](img/image6.jpg)]
+
+---
+## Getting to Know Shiny
+### Understanding the architecture
+
+.large[
+- Every Shiny app is maintained by a computer running R.]
+
+![](img/image7.jpg)
+
+---
+## Getting to Know Shiny
+### The Structure of a Shiny app
+
+.pull-left[
+.large[
+- A Shiny app comprises of two components, namely:
+    - a user-interface script, and 
+    - a server script.]]
+
+.pull-right[
+![](img/image7-1.jpg)]
+
+---
+
+## Getting to Know Shiny
+### Shiny's user-interface, *ui.R*
+
+.large[
+- The *ui.R* script controls the layout and appearance of a shiny app.  
+    - It is defined in a source script name *ui.R*.
+    
+    - Actually, *ui* is a web document that the user gets to see, it is based on the famous Twitter bootstrap framework, which makes the look and layout highly customizable and fully responsive.
+    
+    - In fact, you only need to know R and how to use the shiny package to build a pretty web application. Also, a little knowledge of HTML, CSS, and JavaScript may help.]
+    
+---
+## Getting to Know Shiny
+### Shiny's server *server.R*
+
+.large[
+- The *server.R* script contains the instructions that your computer needs to build your Shiny app.
+
+- You are expected to:
+
+    - know how to programme with R.
+    - familiar with Tidyverse, specifically dplyr, tidyr and ggplot2 
+]
+
+---
+## It's Show Time
+
+
+```{r echo=FALSE, eval=FALSE, warning=FALSE, message=FALSE}
+library(pagedown)
+pagedown::chrome_print("R4DSA-Topic5.html")
+```
