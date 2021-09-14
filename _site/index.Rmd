@@ -1,7 +1,7 @@
 ---
 title: "Democratising Geospatial Data Science and Analytics with R Shiny App"
 subtitle: ""  
-author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems (Practice)"
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems (Practice)<br/>tskam@smu.edus.sg"
 institute: "School of Computing and Information Systems</br>Singapore Management University"
 date: "2020-01-12 (updated: `r Sys.Date()`)"
 output:
@@ -162,7 +162,13 @@ It allows R users:
 ![:scale 75%](img/image6.jpg)
 ]
 
+---
+.center[
+## Want to Learn More?
 
+![:scale 85%](img/image7.jpg)
+
+]
 
 ```{r echo=FALSE, eval=FALSE, warning=FALSE, message=FALSE}
 library(pagedown)
